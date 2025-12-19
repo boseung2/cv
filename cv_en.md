@@ -129,7 +129,7 @@ Mar. 2025 – Present
 
 **Founder & Operator**, Chack Marketing  
 Hwaseong, South Korea
-Jan. 2024 – Dec. 2024
+Jun. 2023 – Jun. 2024
 
 - Founded and operated an online marketing agency providing digital marketing services
 - Managed online shopping mall operations, including product planning, sales, and marketing
