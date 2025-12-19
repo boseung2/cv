@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{title}}</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="{{base}}style.css" />
   </head>
   <body>
     <main class="page">
+      <header class="topbar no-print">
+        <nav class="nav">
+          <a class="navlink" href="{{root}}">EN</a>
+          <a class="navlink" href="{{root}}ko/">KO</a>
+        </nav>
+        <a class="btn" href="{{base}}{{pdfName}}">Download PDF</a>
+      </header>
+
       <article class="cv">{{content}}</article>
 
       <footer class="footer no-print">
-        <a class="btn" href="./cv.pdf">Download PDF</a>
         <span class="muted">Last updated: {{updated}}</span>
       </footer>
     </main>

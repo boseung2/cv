@@ -98,11 +98,40 @@ code {
   border-radius: 8px;
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 13px;
+}
+.navlink:hover {
+  border-color: #cbd5e1;
+}
+
 .footer {
   display: flex;
   gap: 12px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 12px;
 }
 .btn {
