@@ -52,7 +52,7 @@ Dec. 2025 – Present
 
 **Frontend Software Engineer**, Turtleship Inc.
 Seoul, South Korea  
-Dec. 2021 – Jan. 2022
+Dec. 2021 – Jan. 2023
 
 - Developed a B2B SaaS platform for automated settlement between Dongdaemun wholesale suppliers and online shopping malls
 
