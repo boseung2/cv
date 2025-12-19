@@ -50,7 +50,7 @@ Jeonbuk National University
 
 ## 기술 / 프로젝트 경험 (Technical / Project Experience)
 
-**프론트엔드 소프트웨어 엔지니어**, 터틀쉽(Turtleship Inc.)  
+**프론트엔드 소프트웨어 엔지니어**, 거북선컴퍼니(Turtleship Inc.)  
 서울, 대한민국  
 2021.12 – 2023.01
 

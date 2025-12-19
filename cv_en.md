@@ -42,6 +42,7 @@ Mar. 2016 – Jul. 2017
 ## Research Experience
 
 **Undergraduate Researcher**, Operating Systems Lab — Jeonbuk National University  
+Jeonju, SouthKorea  
 Dec. 2025 – Present
 
 - Conducting research on cloud computing systems using OpenStack, focusing on virtualization and resource management
@@ -50,14 +51,14 @@ Dec. 2025 – Present
 
 ## Technical / Project Experience
 
-**Frontend Software Engineer**, Turtleship Inc.
+**Frontend Software Engineer**, Turtleship Inc.  
 Seoul, South Korea  
 Dec. 2021 – Jan. 2023
 
 - Developed a B2B SaaS platform for automated settlement between Dongdaemun wholesale suppliers and online shopping malls
 
 **Sales Associate (Full-time)**, JD Sports Korea  
-Hwaseong, South Korea
+Hwaseong, South Korea  
 Apr. 2019 - Dec. 2019
 
 - Developed teamwork and operational problem-solving skills in a large-scale retail environment
@@ -128,7 +129,7 @@ Mar. 2025 – Present
 - Solving competitive programming problems and strengthening problem-solving skills
 
 **Founder & Operator**, Chack Marketing  
-Hwaseong, South Korea
+Hwaseong, South Korea  
 Jun. 2023 – Jun. 2024
 
 - Founded and operated an online marketing agency providing digital marketing services
