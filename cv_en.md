@@ -1,36 +1,25 @@
----
-title: "CV - Boseung Jung"
----
-
 # BoSeung Jung
 
-**Undergraduate Student, Computer Science**  
+**Undergraduate Student, Computer Science & Artificial Intelligence**  
 Jeonbuk National University
 
-📧 Email: jungbs3726@naver.com
+📧 Email: jungbs3726@naver.com  
 🔗 GitHub: https://github.com/boseung2
 
 ---
 
 ## Education
 
-**Jeonbuk National University (JBNU)**  
-B.S. in Computer Science & Artificial Intelligence  
-Jeonju, South Korea  
-Mar. 2025 – Present
+**Jeonbuk National University (JBNU)** | Jeonju, South Korea  
+B.S. in Computer Science & Artificial Intelligence | Mar. 2025 – Present
 
 - GPA: 4.43 / 4.5
 
-**Academic Credit Bank System (ACBS)**  
-B.A. in Psychology  
-National Institute for Lifelong Education (NILE)  
-Seoul, South Korea  
-Feb. 2025
+**Academic Credit Bank System (ACBS)** | Seoul, South Korea  
+B.A. in Psychology (National Institute for Lifelong Education, NILE) | Feb. 2025
 
-**Hankyong National University (HKNU)**  
-B.S. in Electronic & Electrical Engineering _(Withdrawn)_  
-Anseong, South Korea  
-Mar. 2016 – Jul. 2017
+**Hankyong National University (HKNU)** | Anseong, South Korea  
+B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2017
 
 ---
 
@@ -45,9 +34,8 @@ Mar. 2016 – Jul. 2017
 
 ## Research Experience
 
-**Undergraduate Researcher**, Operating Systems Lab — Jeonbuk National University  
-Jeonju, SouthKorea  
-Dec. 2025 – Present
+**Undergraduate Researcher**, Operating Systems Lab — Jeonbuk National University | Jeonju, South Korea  
+| Dec. 2025 – Present
 
 - Conducting research on cloud computing systems using OpenStack, focusing on virtualization and resource management
 
@@ -55,15 +43,13 @@ Dec. 2025 – Present
 
 ## Technical / Project Experience
 
-**Frontend Software Engineer**, Turtleship Inc.  
-Seoul, South Korea  
-Dec. 2021 – Jan. 2023
+**Frontend Software Engineer**, Turtleship Inc. | Seoul, South Korea  
+| Dec. 2021 – Jan. 2023
 
 - Developed a B2B SaaS platform for automated settlement between Dongdaemun wholesale suppliers and online shopping malls
 
-**Sales Associate (Full-time)**, JD Sports Korea  
-Hwaseong, South Korea  
-Apr. 2019 - Dec. 2019
+**Sales Associate (Full-time)**, JD Sports Korea | Hwaseong, South Korea  
+| Apr. 2019 – Dec. 2019
 
 - Developed teamwork and operational problem-solving skills in a large-scale retail environment
 
@@ -71,11 +57,11 @@ Apr. 2019 - Dec. 2019
 
 ## Honors & Awards
 
-- 2025, Excellence Award, JBNU Idea Hackathon — (Jeonju, South Korea)
-- 2025, Excellence Award, Startup Idea Challenge — (Daejeon, South Korea)
-- 2025, Excellence Award, Honam IS Hackathon (Jeju, South Korea)
-- 2025, Special Prize, Jeonju ICT Digital Idea & New Technology Contest (Jeonju, South Korea)
-- 2025, Gold Prize, JBNU SW/AI Competition (Jeonju, South Korea)
+2025, Excellence Award, JBNU Idea Hackathon | Jeonju, South Korea  
+2025, Excellence Award, Startup Idea Challenge | Daejeon, South Korea  
+2025, Excellence Award, Honam IS Hackathon | Jeju, South Korea  
+2025, Special Prize, Jeonju ICT Digital Idea & New Technology Contest |Jeonju, South Korea  
+2025, Gold Prize, JBNU SW/AI Competition | Jeonju, South Korea
 
 ---
 
@@ -109,9 +95,8 @@ Apr. 2019 - Dec. 2019
 
 ## Teaching Experience
 
-**Teaching Assistant**, Project Beginner — JBNU  
-Jeonju, South Korea  
-Sep. 2025 - Dec. 2025
+**Teaching Assistant**, Project Beginner — JBNU | Jeonju, South Korea  
+| Sep. 2025 – Dec. 2025
 
 - Mentored students on frontend development topics
 
@@ -119,29 +104,25 @@ Sep. 2025 - Dec. 2025
 
 ## Extracurricular Activities
 
-**Founder / Lead**, ZeroOne — JBNU Startup & Career Club  
-Jeonju, South Korea  
-Mar. 2025 – Present
+**Founder / Lead**, ZeroOne — JBNU Startup & Career Club | Jeonju, South Korea  
+| Mar. 2025 – Present
 
 - Founded and led a student club focused on entrepreneurship, startups, and career development
 
-**Member**, ALPS — JBNU Algorithm Club  
-Jeonju, South Korea  
-Mar. 2025 – Present
+**Member**, ALPS — JBNU Algorithm Club | Jeonju, South Korea  
+| Mar. 2025 – Present
 
 - Participating in algorithm and data structure study sessions
 - Solving competitive programming problems and strengthening problem-solving skills
 
-**Founder & Operator**, Chack Marketing  
-Hwaseong, South Korea  
-Jun. 2023 – Jun. 2024
+**Founder & Operator**, Chack Marketing | Hwaseong, South Korea  
+| Jun. 2023 – Jun. 2024
 
 - Founded and operated an online marketing agency providing digital marketing services
 - Managed online shopping mall operations, including product planning, sales, and marketing
 
-**Trainee**, Bitcamp — Java Web Backend Development Bootcamp  
-Seoul, South Korea  
-Dec. 2020 – May 2021
+**Trainee**, Bitcamp — Java Web Backend Development Bootcamp | Seoul, South Korea  
+| Dec. 2020 – May 2021
 
 - Completed Java-based web backend development training
 - Implemented a study group service project using Spring

@@ -1,178 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 :root {
-  --bg: #ffffff;
-  --fg: #111827;
-  --muted: #6b7280;
-  --line: #e5e7eb;
-  --accent: #2563eb;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans",
-    "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+  --text-color: #333;
+  --accent-color: #2c3e50;
+  --date-color: #666;
+  --line-color: #ddd;
 }
 
-* {
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  background: #f3f4f6;
-  color: var(--fg);
-  font-family: var(--sans);
-  line-height: 1.45;
-}
 
-.page {
-  max-width: 900px;
-  margin: 28px auto;
-  padding: 0 16px;
-}
-
-.cv {
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 28px 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 10px 0;
-  letter-spacing: -0.02em;
-}
+/* --- Typography --- */
 h1 {
-  font-size: 34px;
-}
-h2 {
-  margin-top: 20px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  font-size: 16px;
+  font-size: 2.2rem;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #0f172a;
-  letter-spacing: 0.08em;
-}
-h3 {
-  font-size: 14px;
-  margin-top: 12px;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  letter-spacing: 1px;
 }
 
-p {
-  margin: 8px 0;
-}
-ul {
-  margin: 8px 0 0 0;
-  padding-left: 18px;
-}
-li {
-  margin: 5px 0;
-}
-hr {
-  border: 0;
-  border-top: 1px solid var(--line);
-  margin: 16px 0;
-}
-
-strong {
-  font-weight: 650;
-}
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-code {
-  font-family: var(--mono);
-  font-size: 0.95em;
-  background: #f8fafc;
-  border: 1px solid var(--line);
-  padding: 2px 6px;
-  border-radius: 8px;
-}
-
-.topbar {
+/* --- Section Headings (수정됨: 크기 키움 & 여백 조정) --- */
+h2 {
+  font-size: 1.4rem; /* 기존 1.1rem에서 1.4rem으로 확대 */
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-top: 2rem; /* 섹션 위쪽 여백 */
+  margin-bottom: 1.2rem; /* 섹션 아래쪽 여백(본문과 거리) */
   display: flex;
   align-items: center;
+}
+
+/* 제목 우측 선 */
+h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--line-color);
+  margin-left: 15px;
+}
+
+/* --- Entry Group (새로 추가됨: 학교별 덩어리 간격) --- */
+.entry-group {
+  margin-bottom: 1.5rem; /* 학교(항목) 사이의 간격을 넓힘 */
+}
+
+/* 2. [핵심] 만약 entry-group 바로 뒤에 리스트(ul)가 온다면? 
+   -> entry-group의 하단 여백을 대폭 줄임 (0으로 설정) */
+.entry-group:has(+ ul) {
+  margin-bottom: 0;
+}
+
+/* 3. [핵심] entry-group 바로 뒤에 오는 리스트(ul) 스타일링 */
+.entry-group + ul {
+  margin-top: 0.2rem; /* 위쪽 제목과 아주 살짝만 띄움 */
+  margin-bottom: 1.5rem; /* 리스트가 끝난 후에 다음 항목과 간격을 벌림 */
+
+  /* (선택 사항) 설명글은 제목보다 살짝 들여쓰기 하면 가독성이 좋습니다 */
+  padding-left: 0.5rem;
+}
+
+/* 마지막 항목은 간격 제거 */
+.entry-group:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Layout Rows --- */
+.split-row,
+.plain-row {
+  margin-bottom: 0; /* 같은 학교 내 줄 간격은 좁게 유지 */
+  line-height: 1.35;
+}
+
+.split-row {
+  display: flex;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 12px;
+  align-items: baseline;
 }
 
-.nav {
+.split-row .left {
+  text-align: left;
+  font-weight: 400;
+}
+
+/* --- Right Text (수정됨: 글자 크기 축소) --- */
+.split-row .right {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--date-color);
+  font-style: italic;
+  font-size: 0.85rem; /* 기존보다 작게 설정 (약 13~14px) */
+  margin-left: 1rem;
+}
+
+/* --- Lists (리스트 스타일 제거) --- */
+ul {
+  list-style-type: none; /* 리스트 앞의 점(•)이나 별(*) 제거 */
+  padding-left: 0; /* 불필요한 왼쪽 들여쓰기 제거 */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+  padding-left: 0;
+}
+
+footer {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.navlink {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--bg);
-  color: var(--fg);
-  text-decoration: none;
-  font-size: 13px;
-}
-.navlink:hover {
-  border-color: #cbd5e1;
-}
-
-.footer {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 12px;
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--bg);
-  color: var(--fg);
-  text-decoration: none;
-}
-.btn:hover {
-  border-color: #cbd5e1;
-}
-.muted {
-  color: var(--muted);
-  font-size: 12px;
-}
-
+/* --- [수정] PDF Print Settings --- */
 @media print {
   body {
-    background: #fff;
+    /* [핵심 수정] padding: 0 -> padding: 0 15mm 변경 */
+    /* 위아래는 0, 좌우에 15mm 안쪽 여백을 강제로 줍니다 */
+    padding: 0 15mm;
+
+    max-width: 100%;
+    -webkit-print-color-adjust: exact;
   }
-  .page {
-    max-width: none;
+
+  @page {
+    /* Playwright 제어와 충돌 방지를 위해 0 유지하되, 
+       위의 body padding으로 시각적 여백을 확보합니다. */
     margin: 0;
-    padding: 0;
+    size: A4;
   }
-  .cv {
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
+
+  a[href]:after {
+    content: none !important;
   }
+
+  /* [추가] 인쇄 시 숨길 요소 */
   .no-print {
     display: none !important;
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
   }
 }
