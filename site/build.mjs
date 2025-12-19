@@ -63,6 +63,7 @@ let builtAny = false;
       year: "numeric",
       month: "short",
       day: "2-digit",
+      timeZone: "Asia/Seoul",
     }).format(mdStat.mtime);
 
     let bodyHtml = md.render(content);
