@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "- 📄 PDF: cv.pdf - 🌐 Web: https://boseung2.github.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "node site/build.mjs",
+    "pdf": "node site/build.mjs --pdf",
+    "all": "node site/build.mjs --pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boseung2/cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boseung2/cv/issues"
+  },
+  "homepage": "https://github.com/boseung2/cv#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}

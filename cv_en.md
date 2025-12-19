@@ -1,3 +1,7 @@
+---
+title: "CV - Boseung Jung"
+---
+
 # BoSeung Jung
 
 **Undergraduate Student, Computer Science**  
