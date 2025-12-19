@@ -31,3 +31,10 @@ npm install
 npm run all
 open dist/index.html
 ```
+
+```bash
+open dist/index.html
+open dist/ko/index.html
+open dist/cv.pdf
+open dist/ko/cv_ko.pdf
+```
