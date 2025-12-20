@@ -36,7 +36,7 @@ const targets = [
     htmlName: "index.html",
     pdfName: "cv_ko.pdf",
     lang: "ko",
-    defaultTitle: "이력서 - 정보승",
+    defaultTitle: "CV - Boseung Jung",
   },
 ];
 
