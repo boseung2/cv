@@ -11,7 +11,7 @@ Jeonbuk National University
 ## Education
 
 **Jeonbuk National University (JBNU)** | Jeonju, South Korea  
-B.S. in Computer Science & Artificial Intelligence | Mar. 2025 – Present
+B.S. in Computer Science & Artificial Intelligence · Semiconductor Convergence | Mar. 2025 – Present
 
 - GPA: 4.43 / 4.5
 
@@ -25,10 +25,8 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 
 ## Research Interests
 
-- Cloud Computing and Distributed Systems
-- AI Systems and ML Infrastructure
-- Large Language Models (LLMs)
-- Computer Vision, especially medical imaging
+- Cloud Computing and Systems Architecture
+- AI Agents and AI Automation
 
 ---
 
@@ -57,11 +55,16 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 
 ## Honors & Awards
 
-2025, Excellence Award, JBNU Idea Hackathon | Jeonju, South Korea  
-2025, Excellence Award, Startup Idea Challenge | Daejeon, South Korea  
-2025, Excellence Award, Honam IS Hackathon | Jeju, South Korea  
-2025, Special Prize, Jeonju ICT Digital Idea & New Technology Contest |Jeonju, South Korea  
-2025, Gold Prize, JBNU SW/AI Competition | Jeonju, South Korea
+**2026**, **Kakao Impact**, AI TOP 100 — Bronze Award | Yongin, South Korea  
+**2026**, **JBNU**, Academic Excellence — President's Award | Jeonju, South Korea  
+**2026**, **JBNU**, Outstanding Career Club — Club Excellence Award | Jeonju, South Korea  
+**2026**, **JBNU**, TBM Startup Camp — Gold Prize | Jeju, South Korea  
+**2025**, **JBNU**, SW Convergence Portfolio Contest — Encouragement Award | Jeonju, South Korea  
+**2025**, **JBNU**, Idea Hackathon — Excellence Award | Jeonju, South Korea  
+**2025**, **Ministry of SMEs and Startups**, Startup Idea Challenge — Excellence Award | Daejeon, South Korea  
+**2025**, **Honam ICT Innovation Square**, Honam IS Hackathon — Excellence Award | Jeju, South Korea  
+**2025**, **Jeonju ICT Innovation Square**, Digital Idea & New Technology Contest — Special Prize | Jeonju, South Korea  
+**2025**, **JBNU**, SW/AI Competition — Gold Prize | Jeonju, South Korea
 
 ---
 
