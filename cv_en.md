@@ -13,7 +13,7 @@ Jeonbuk National University
 **Jeonbuk National University (JBNU)** | Jeonju, South Korea  
 B.S. in Computer Science & Artificial Intelligence · Semiconductor Convergence | Mar. 2025 – Present
 
-- GPA: 4.43 / 4.5
+- GPA: 4.38 / 4.5
 
 **Academic Credit Bank System (ACBS)** | Seoul, South Korea  
 B.A. in Psychology (National Institute for Lifelong Education, NILE) | Feb. 2025
@@ -36,6 +36,12 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 | Dec. 2025 – Present
 
 - Conducting research on cloud computing systems using OpenStack, focusing on virtualization and resource management
+
+**Research Intern**, Summer Research Internship (Advisor: Dr. Mingon Kang) — University of Nevada, Las Vegas (UNLV) | Las Vegas, USA  
+| Jun. 2026 – Jul. 2026
+
+- Researched LASSO-based feature selection for high-dimensional genomic data — implemented and compared LASSO, Elastic Net, Random LASSO, and Hi-LASSO, reproducing performance on synthetic datasets (up to 10,000 variables)
+- Applied the pipeline to real brain-tumor (GBM/LGG) genomic data (266 patients, 19,777 genes) to identify candidate biomarker genes
 
 ---
 
