@@ -32,7 +32,7 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 
 ## Research Experience
 
-**Undergraduate Researcher**, Operating Systems Lab — Jeonbuk National University | Jeonju, South Korea  
+**Undergraduate Researcher**, Operating Systems Lab (Advisor: Dr. Hyunchan Park) — Jeonbuk National University | Jeonju, South Korea  
 | Dec. 2025 – Present
 
 - Conducting research on cloud computing systems using OpenStack, focusing on virtualization and resource management

@@ -32,7 +32,7 @@ Jeonbuk National University
 
 ## 연구 경험 (Research Experience)
 
-**학부 연구생**, 운영체제 연구실 — 전북대학교 | 전주, 대한민국  
+**학부 연구생**, 운영체제 연구실 (지도교수: Dr. Hyunchan Park) — 전북대학교 | 전주, 대한민국  
 | 2025.12 – 현재
 
 - OpenStack 기반 클라우드 컴퓨팅 시스템을 대상으로 가상화 및 자원 관리 중심의 연구 수행
