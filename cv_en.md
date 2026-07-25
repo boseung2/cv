@@ -67,7 +67,7 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 **2026**, **JBNU**, Outstanding Career Club — Club Excellence Award | Jeonju, South Korea  
 **2026**, **JBNU**, TBM Startup Camp — Gold Prize | Jeju, South Korea  
 **2025**, **JBNU**, SW Convergence Portfolio Contest — Encouragement Award | Jeonju, South Korea  
-**2025**, **JBNU**, Idea Hackathon — Excellence Award | Jeonju, South Korea  
+**2025**, **JBNU**, Idea Hackathon — Grand Prize | Jeonju, South Korea  
 **2025**, **Ministry of SMEs and Startups**, Startup Idea Challenge — Excellence Award | Daejeon, South Korea  
 **2025**, **Honam ICT Innovation Square**, Honam IS Hackathon — Excellence Award | Jeju, South Korea  
 **2025**, **Jeonju ICT Innovation Square**, Digital Idea & New Technology Contest — Special Prize | Jeonju, South Korea  
