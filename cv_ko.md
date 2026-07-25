@@ -3,7 +3,7 @@
 **전북대학교 컴퓨터인공지능학부 학부생**  
 Jeonbuk National University
 
-📧 이메일: jungbs3726@naver.com  
+📧 이메일: jungbs3726@gmail.com  
 🔗 GitHub: https://github.com/boseung2
 
 ---
@@ -61,6 +61,7 @@ Jeonbuk National University
 
 ## 수상 내역 (Honors & Awards)
 
+**2026** **전북대학교**, JBNUPC 프로그래밍 경진대회 — 특별상 | 전주, 대한민국  
 **2026** **카카오임팩트**, AI TOP 100 — 동상 | 용인, 대한민국  
 **2026** **전북대학교**, 성적우수상 — 총장상 | 전주, 대한민국  
 **2026** **전북대학교**, 우수 취업동아리 — 우수상 | 전주, 대한민국  

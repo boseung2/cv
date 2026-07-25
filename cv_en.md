@@ -3,7 +3,7 @@
 **Undergraduate Student, Computer Science & Artificial Intelligence**  
 Jeonbuk National University
 
-📧 Email: jungbs3726@naver.com  
+📧 Email: jungbs3726@gmail.com  
 🔗 GitHub: https://github.com/boseung2
 
 ---
@@ -61,6 +61,7 @@ B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2
 
 ## Honors & Awards
 
+**2026**, **JBNU**, JBNUPC Programming Contest — Special Prize | Jeonju, South Korea  
 **2026**, **Kakao Impact**, AI TOP 100 — Bronze Award | Yongin, South Korea  
 **2026**, **JBNU**, Academic Excellence — President's Award | Jeonju, South Korea  
 **2026**, **JBNU**, Outstanding Career Club — Club Excellence Award | Jeonju, South Korea  
