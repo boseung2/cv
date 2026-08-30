@@ -67,9 +67,8 @@ let builtAny = false;
     bodyHtml = transformPipes(bodyHtml);
     bodyHtml = bodyHtml.replace(/<hr\s*\/?>/gi, "");
 
-    // [수정 1] CSS/JS용 base 경로 (CSS는 항상 루트에 있으므로)
-    // EN(루트)일 때는 "./", KO(하위)일 때는 "../"
-    const base = t.outSubdir ? "../" : "./";
+    // [수정 1] CSS는 각 출력 폴더에 함께 복사하므로 항상 같은 폴더를 참조
+    const base = "./";
 
     // [수정 2] 언어 전환 링크를 위한 명확한 상대 경로 계산
     let link_en, link_ko;
@@ -97,6 +96,7 @@ let builtAny = false;
 
     const outSubdirPath = path.join(outDir, t.outSubdir);
     fs.mkdirSync(outSubdirPath, { recursive: true });
+    fs.writeFileSync(path.join(outSubdirPath, "style.css"), css, "utf-8");
     const htmlOutPath = path.join(outSubdirPath, t.htmlName);
 
     fs.writeFileSync(htmlOutPath, html, "utf-8");
