@@ -1,188 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
 :root {
-  --text-color: #333;
-  --accent-color: #2c3e50;
-  --date-color: #666;
-  --line-color: #ddd;
+  --text-color: #252c32;
+  --accent-color: #253f56;
+  --date-color: #55616b;
+  --line-color: #cbd3d9;
 }
-
+* { box-sizing: border-box; }
 body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
+  font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+  font-size: 15px;
+  line-height: 1.42;
   color: var(--text-color);
   max-width: 210mm;
   margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 24px;
 }
-
-/* --- Typography --- */
+html:lang(ko) body { word-break: keep-all; overflow-wrap: break-word; }
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.15rem;
+  line-height: 1.15;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin: 0 0 9px;
   color: var(--accent-color);
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
 }
-
-/* --- Section Headings (수정됨: 크기 키움 & 여백 조정) --- */
 h2 {
-  font-size: 1.4rem; /* 기존 1.1rem에서 1.4rem으로 확대 */
+  font-size: 1.05rem;
+  line-height: 1.25;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin-top: 2rem; /* 섹션 위쪽 여백 */
-  margin-bottom: 1.2rem; /* 섹션 아래쪽 여백(본문과 거리) */
+  margin: 22px 0 10px;
   display: flex;
   align-items: center;
+  gap: 12px;
+  break-after: avoid;
+  page-break-after: avoid;
 }
-
-/* 제목 우측 선 */
 h2::after {
   content: "";
   flex-grow: 1;
   height: 1px;
   background-color: var(--line-color);
-  margin-left: 15px;
 }
-
-/* --- Entry Group (새로 추가됨: 학교별 덩어리 간격) --- */
-.entry-group {
-  margin-bottom: 1.5rem; /* 학교(항목) 사이의 간격을 넓힘 */
-}
-
-/* 2. [핵심] 만약 entry-group 바로 뒤에 리스트(ul)가 온다면? 
-   -> entry-group의 하단 여백을 대폭 줄임 (0으로 설정) */
-.entry-group:has(+ ul) {
-  margin-bottom: 0;
-}
-
-/* 3. [핵심] entry-group 바로 뒤에 오는 리스트(ul) 스타일링 */
-.entry-group + ul {
-  margin-top: 0.2rem; /* 위쪽 제목과 아주 살짝만 띄움 */
-  margin-bottom: 1.5rem; /* 리스트가 끝난 후에 다음 항목과 간격을 벌림 */
-
-  /* (선택 사항) 설명글은 제목보다 살짝 들여쓰기 하면 가독성이 좋습니다 */
-  padding-left: 0.5rem;
-}
-
-/* 마지막 항목은 간격 제거 */
-.entry-group:last-child {
-  margin-bottom: 0;
-}
-
-/* --- Layout Rows --- */
-.split-row,
-.plain-row {
-  margin-bottom: 0; /* 같은 학교 내 줄 간격은 좁게 유지 */
-  line-height: 1.35;
-}
-
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.entry-group { margin: 0 0 10px; break-inside: avoid; }
+.cv-entry { margin: 0 0 12px; break-inside: avoid; page-break-inside: avoid; }
+.cv-entry > .entry-group { margin-bottom: 4px; }
+.cv-entry > ul { margin-bottom: 0; }
+.cv-section > .entry-group:last-child,
+.cv-section > .cv-entry:last-child { margin-bottom: 0; }
+.split-row, .plain-row { line-height: inherit; }
 .split-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 12px;
 }
-
-.split-row .left {
-  text-align: left;
-  font-weight: 400;
-}
-
-/* --- Right Text (수정됨: 글자 크기 축소) --- */
+.split-row .left { text-align: left; min-width: 0; }
 .split-row .right {
+  flex-shrink: 0;
   text-align: right;
   white-space: nowrap;
   color: var(--date-color);
-  font-style: italic;
-  font-size: 0.85rem; /* 기존보다 작게 설정 (약 13~14px) */
-  margin-left: 1rem;
+  font-size: 0.88em;
 }
-
-/* --- Lists (리스트 스타일 제거) --- */
-ul {
-  list-style-type: none; /* 리스트 앞의 점(•)이나 별(*) 제거 */
-  padding-left: 0; /* 불필요한 왼쪽 들여쓰기 제거 */
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-li {
-  margin-bottom: 0.3rem;
-  padding-left: 0;
-}
-
-footer {
+ul { padding-left: 17px; margin: 4px 0 12px; list-style-type: disc; }
+li { margin-bottom: 4px; break-inside: avoid; }
+li:last-child { margin-bottom: 0; }
+.topbar { margin-bottom: 20px; }
+.nav { display: flex; gap: 14px; }
+.footer {
   display: flex;
   justify-content: space-between;
+  color: var(--date-color);
+  border-top: 1px solid var(--line-color);
+  margin-top: 26px;
+  padding-top: 12px;
+  font-size: 0.85em;
 }
-/* 2. 화면 폭이 600px 이하(모바일)일 때의 스타일 */
 @media screen and (max-width: 600px) {
-  /* 전체 폰트 크기 살짝 줄임 */
-  html {
-    font-size: 15px;
-  }
-
-  /* 이름(H1) 크기 조절 */
-  h1 {
-    font-size: 1.8rem;
-    text-align: center; /* 모바일에서는 가운데 정렬이 예쁠 수 있음 (선택사항) */
-  }
-
-  /* 상단 연락처 정보 등도 가운데 정렬 (선택사항) */
-  p {
-    text-align: center;
-  }
-
-  /* [중요] 좌우로 찢어진 정보(학교 | 날짜)를 위아래로 변경 */
-  .split-row {
-    flex-direction: column; /* 세로 배치 */
-    align-items: flex-start; /* 왼쪽 정렬 */
-    gap: 2px; /* 줄 간격 */
-  }
-
-  /* 오른쪽 텍스트(날짜/지역) 스타일 보정 */
-  .split-row .right {
-    text-align: left; /* 왼쪽 정렬로 변경 */
-    margin-left: 0; /* 왼쪽 여백 제거 */
-    font-size: 0.9em; /* 날짜는 조금 작게 */
-    color: #777;
-  }
-
-  /* 상단 메타 바 (PDF 다운로드 | 업데이트 날짜) 도 위아래로 */
-  .meta-bar {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
+  body { padding: 18px; }
+  .split-row { flex-direction: column; align-items: flex-start; gap: 1px; }
+  .split-row .right { white-space: normal; text-align: left; }
+  .footer { flex-direction: column; gap: 8px; }
 }
-
-/* --- PDF Print Settings --- */
 @media print {
+  @page { size: A4; }
   body {
-    /* [핵심 수정] padding: 0 -> padding: 0 15mm 변경 */
-    /* 위아래는 0, 좌우에 15mm 안쪽 여백을 강제로 줍니다 */
-    padding: 0 15mm;
-
-    max-width: 100%;
-    -webkit-print-color-adjust: exact;
-  }
-
-  @page {
-    /* Playwright 제어와 충돌 방지를 위해 0 유지하되, 
-       위의 body padding으로 시각적 여백을 확보합니다. */
+    padding: 0;
     margin: 0;
-    size: A4;
+    max-width: none;
+    font-size: 10.7pt;
+    line-height: 1.35;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
-
-  a[href]:after {
-    content: none !important;
-  }
-
-  /* [추가] 인쇄 시 숨길 요소 */
-  .no-print {
-    display: none !important;
-  }
+  h1 { font-size: 26pt; margin-bottom: 7pt; }
+  h2 { font-size: 11.5pt; margin: 13pt 0 6pt; }
+  .entry-group { margin-bottom: 7pt; }
+  .cv-entry { margin-bottom: 9pt; }
+  .cv-entry > .entry-group { margin-bottom: 3pt; }
+  ul { padding-left: 12pt; margin: 3pt 0 8pt; }
+  li { margin-bottom: 3pt; }
+  .print-break { break-before: page; page-break-before: always; }
+  .print-break > h2 { margin-top: 0; }
+  .no-print { display: none !important; }
+  a[href]::after { content: none !important; }
 }

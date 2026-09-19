@@ -1,130 +1,102 @@
+---
+print_page_break_before: Skills
+---
+
 # Boseung Jung
 
 **Undergraduate Researcher, Computer Science & Artificial Intelligence**  
-Jeonbuk National University
-
-📧 Email: jungbs3726@gmail.com  
-🔗 GitHub: https://github.com/boseung2
-
----
+Jeonbuk National University, South Korea  
+[jungbs3726@gmail.com](mailto:jungbs3726@gmail.com) | [github.com/boseung2](https://github.com/boseung2)
 
 ## Research Interests
 
-- Cloud computing and machine learning systems
-- Large language model inference and serving optimization
-- Resource scheduling and allocation in virtualized and containerized systems
-- Performance measurement and observability of distributed systems
+**Efficient LLM inference and serving**
 
----
-
-## Interdisciplinary Interests
-
-- Hardware constraints of GPUs and accelerators in machine learning system design
-- Energy efficiency and sustainability of computing systems
-
----
-
-## Education
-
-**Jeonbuk National University (JBNU)** | Jeonju, South Korea  
-B.S. in Computer Science & Artificial Intelligence · Semiconductor Convergence | Mar. 2025 – Feb. 2029 (expected)
-
-- GPA: 4.38 / 4.5 (98.60 / 100)
-
-**Academic Credit Bank System (ACBS)** | Seoul, South Korea  
-B.A. in Psychology (National Institute for Lifelong Education, NILE) | Feb. 2025
-
-**Hankyong National University (HKNU)** | Anseong, South Korea  
-B.S. in Electronic & Electrical Engineering _(Withdrawn)_ | Mar. 2016 – Jul. 2017
-
----
+- Model partitioning and placement across GPUs under memory and communication constraints
+- KV cache management, prefill/decode scheduling, and request scheduling
+- Performance evaluation of inference systems: latency, throughput, memory use, and energy efficiency
 
 ## Research Experience
 
-**Undergraduate Researcher**, Operating Systems Lab (Advisor: Dr. Hyunchan Park) — Jeonbuk National University | Jeonju, South Korea  
-| Dec. 2025 – Present
+**Undergraduate Researcher, Operating Systems Lab** | Dec. 2025 - Present  
+Jeonbuk National University; Advisor: Dr. Hyunchan Park
 
-- Operate a 20-node OpenStack cluster serving the research group's workloads; audited resource allocation across the cluster and designed the resource layout for its next version
-- Contributing to an ongoing lab project on GPU sharing and fair allocation for machine learning workloads
-- Deployed and operated vLLM for LLM inference serving on the lab's GPU nodes
+- Deployed and operated vLLM on lab GPU nodes for LLM inference serving.
+- Lead an ongoing project using locally served LLMs to develop agent services for the university's cloud platform.
+- Help operate a 20-node OpenStack cluster for research workloads; audited resource allocation and contributed to planning the next version's resource layout.
+- Contribute to ongoing lab research on GPU sharing and fair allocation for machine learning workloads.
 
-**Research Intern**, Summer Research Internship (Advisor: Dr. Mingon Kang) — University of Nevada, Las Vegas (UNLV) | Las Vegas, USA  
-| Jun. 2026 – Jul. 2026
+**Research Intern** | Jun. 2026 - Jul. 2026  
+University of Nevada, Las Vegas (UNLV); Advisor: Dr. Mingon Kang
 
-- Reproduced a published high-dimensional feature-selection study — implemented and compared LASSO, Elastic Net, Random LASSO, and Hi-LASSO on synthetic data of up to 10,000 variables, then applied the pipeline to brain-tumor (GBM/LGG) genomic data (266 patients, 19,777 genes) to identify candidate biomarker genes
-- Presented the work at the program's closing symposium
+- Implemented and compared LASSO, Elastic Net, Random LASSO, and Hi-LASSO on synthetic datasets with up to 10,000 variables.
+- Parallelized independent bootstrap jobs with joblib; evaluated feature-selection quality using F1 and average precision across repeated experiments.
+- Applied the pipeline to brain tumor (GBM/LGG) genomic data with 266 patients and 19,777 genes, and interpreted selected genes through literature review.
+- Prepared the final research report and presented the findings at the program's closing symposium.
 
----
+## Education
 
-## Teaching Experience
+**Jeonbuk National University** | Mar. 2025 - Feb. 2029 (expected)  
+B.S. in Computer Science & Artificial Intelligence; Semiconductor Convergence  
+GPA: **4.38 / 4.5 (98.60 / 100)**
 
-**Teaching Assistant**, Project Beginner — JBNU | Jeonju, South Korea  
-| Sep. 2025 – Dec. 2025
+**Academic Credit Bank System (ACBS)** | Feb. 2025  
+B.A. in Psychology, National Institute for Lifelong Education (NILE)
 
-- Mentored undergraduate students on frontend development coursework
-
----
-
-## Technical Experience
-
-**Frontend Software Engineer**, Turtleship Inc. | Seoul, South Korea  
-| Dec. 2021 – Jan. 2023
-
-- Built a B2B SaaS platform automating settlement between Dongdaemun wholesale suppliers and online retailers
-
----
+**Hankyong National University** | Mar. 2016 - Jul. 2017  
+Undergraduate study in Electronic & Electrical Engineering (withdrawn)
 
 ## Skills
 
-**Systems**
-
-- Linux, Docker, OpenStack, vLLM
-- Git, GitHub Actions
-
-**Programming Languages**
-
-- C / C++, Python, Java, JavaScript, TypeScript
-
-**Machine Learning**
-
-- PyTorch, Scikit-learn
-
-**Web**
-
-- React.js, Next.js, NestJS, Spring
-
----
+**Systems:** Linux, Docker, OpenStack, vLLM  
+**Programming:** Python, C/C++; Java, JavaScript, TypeScript  
+**Machine learning & experiments:** PyTorch, scikit-learn, NumPy, joblib  
+**Development:** Git, GitHub Actions; React.js, Next.js, NestJS, Spring
 
 ## Selected Awards
 
-**Academic & Technical**
+**President's Award for Academic Excellence**, JBNU | 2025 academic year
 
-**2026**, **JBNU**, Academic Excellence — President's Award | Jeonju, South Korea  
-**2026**, **JBNU**, JBNUPC Programming Contest — Special Prize | Jeonju, South Korea  
-**2026**, **Kakao Impact**, AI TOP 100 — Bronze Award | Yongin, South Korea  
-**2025**, **JBNU**, SW/AI Competition — Gold Prize | Jeonju, South Korea  
-**2025**, **JBNU**, SW Convergence Portfolio Contest — Encouragement Award | Jeonju, South Korea
+**AI TOP 100 (CAMPUS), Bronze Award**, Kakao Impact / Brian Impact | 2026
 
-**Innovation & Entrepreneurship**
+**JBNUPC Programming Contest, Special Prize**, JBNU | 2026
 
-**2026**, **JBNU**, TBM Startup Camp — Gold Prize | Jeju, South Korea  
-**2026**, **JBNU**, Outstanding Career Club — Club Excellence Award | Jeonju, South Korea  
-**2025**, **JBNU**, Idea Hackathon — Grand Prize | Jeonju, South Korea  
-**2025**, **Ministry of SMEs and Startups**, Startup Idea Challenge — Excellence Award | Daejeon, South Korea  
-**2025**, **Honam ICT Innovation Square**, Honam IS Hackathon — Excellence Award | Jeju, South Korea  
-**2025**, **Jeonju ICT Innovation Square**, Digital Idea & New Technology Contest — Special Prize | Jeonju, South Korea
+**SW/AI Competition, Gold Prize**, JBNU | 2025
 
----
+**SW Convergence Portfolio Contest, Encouragement Award**, JBNU | 2025
+
+**TBM Startup Camp, Gold Prize**, JBNU | 2026
+
+**Outstanding Career Club, Club Excellence Award**, JBNU | 2026
+
+**Idea Hackathon, Grand Prize**, JBNU | 2025
+
+**Startup Idea Challenge, Excellence Award**, Ministry of SMEs and Startups | 2025
+
+**Honam IS Hackathon, Excellence Award**, Honam ICT Innovation Square | 2025
+
+**Digital Idea & New Technology Contest, Special Prize**, Jeonju ICT Innovation Square | 2025
+
+## Teaching Experience
+
+**Teaching Assistant, Project Beginner**, JBNU | Fall 2025; Fall 2026 (current)
+
+- Support undergraduate coursework and mentor students on frontend development.
+
+## Professional Experience
+
+**Frontend Software Engineer, Turtleship Inc.** | Dec. 2021 - Jan. 2023  
+Seoul, South Korea
+
+- Built a B2B SaaS platform automating settlement between Dongdaemun wholesale suppliers and online retailers.
 
 ## Activities & Service
 
-**Founder / Lead**, ZeroOne — JBNU Startup & Career Club | Jeonju, South Korea  
-| Mar. 2025 – Present
+**Founder / Lead, ZeroOne**, JBNU | Mar. 2025 - Present
 
-- Founded and led a student club focused on entrepreneurship, startups, and career development
+- Founded and lead a student club focused on entrepreneurship, software projects, and career development.
 
-**Member**, ALPS — JBNU Algorithm Club | Jeonju, South Korea  
-| Mar. 2025 – Present
+**ALPS Algorithm Club**, JBNU | Mar. 2025 - Present
 
-- Participating in algorithm and data structure study sessions
-- Solving competitive programming problems and strengthening problem-solving skills
+- Organizing committee member in 2025; general member in 2026.
+- Participate in algorithm and data structure study sessions and competitive programming practice.

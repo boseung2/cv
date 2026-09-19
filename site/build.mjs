@@ -2,7 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import MarkdownIt from "markdown-it";
 import matter from "gray-matter";
-import { chromium } from "playwright";
+// Allow the desktop's bundled renderer without changing project dependencies.
+const { chromium } = await import(process.env.CV_PLAYWRIGHT_MODULE || "playwright");
 
 const root = process.cwd();
 const outDir = path.join(root, "dist");
@@ -64,8 +65,14 @@ let builtAny = false;
     }).format(mdStat.mtime);
 
     let bodyHtml = md.render(content);
+    // Keep each role heading with its description when printing.
+    bodyHtml = bodyHtml.replace(
+      /(<p>(?:(?!<\/p>)[\s\S])*<\/p>)\s*(<ul>[\s\S]*?<\/ul>)/g,
+      '<div class="cv-entry">$1$2</div>',
+    );
     bodyHtml = transformPipes(bodyHtml);
     bodyHtml = bodyHtml.replace(/<hr\s*\/?>/gi, "");
+    bodyHtml = wrapSections(bodyHtml, data.print_page_break_before);
 
     // [수정 1] CSS는 각 출력 폴더에 함께 복사하므로 항상 같은 폴더를 참조
     const base = "./";
@@ -114,7 +121,17 @@ let builtAny = false;
   }
 })();
 
-// ... transformPipes 및 renderPdf 함수는 그대로 유지 ...
+function wrapSections(html, printPageBreakBefore) {
+  const [intro, ...sections] = html.split(/(?=<h2>)/);
+  return intro + sections.map((section) => {
+    const heading = section.match(/^<h2>([\s\S]*?)<\/h2>/)?.[1];
+    const className = heading === printPageBreakBefore
+      ? "cv-section print-break"
+      : "cv-section";
+    return `<section class="${className}">${section}</section>`;
+  }).join("\n");
+}
+
 function transformPipes(html) {
   return html.replace(/<p>([\s\S]*?)<\/p>/g, (match, innerContent) => {
     const lines = innerContent.split(/<br\s*\/?>/i);
@@ -136,17 +153,27 @@ function transformPipes(html) {
 }
 
 async function renderPdf(htmlFile, pdfFile) {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.setViewportSize({ width: 1280, height: 1024 });
-  const fileUrl = "file://" + path.resolve(htmlFile);
-  await page.goto(fileUrl, { waitUntil: "networkidle" });
-  await page.pdf({
-    path: pdfFile,
-    format: "A4",
-    printBackground: true,
-    scale: 0.95,
-    margin: { top: "12mm", bottom: "12mm", left: "15mm", right: "15mm" },
-  });
-  await browser.close();
+  const browser = await chromium.launch({ channel: process.env.CV_CHROME_CHANNEL });
+  try {
+    const page = await browser.newPage();
+    await page.setViewportSize({ width: 1280, height: 1024 });
+    const fileUrl = "file://" + path.resolve(htmlFile);
+    await page.goto(fileUrl, { waitUntil: "load" });
+    await page.emulateMedia({ media: "print" });
+    await page.evaluate(() => document.fonts.ready);
+    await page.pdf({
+      path: pdfFile,
+      format: "A4",
+      printBackground: true,
+      tagged: true,
+      outline: true,
+      scale: 1,
+      margin: { top: "14mm", bottom: "17mm", left: "17mm", right: "17mm" },
+      displayHeaderFooter: true,
+      headerTemplate: '<div></div>',
+      footerTemplate: '<div style="font-family:Arial,sans-serif;font-size:10px;color:#69727a;width:100%;padding:0 17mm;display:flex;justify-content:space-between;"><span>Boseung Jung | Curriculum Vitae</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>',
+    });
+  } finally {
+    await browser.close();
+  }
 }

@@ -38,3 +38,13 @@ open dist/ko/index.html
 open dist/cv.pdf
 open dist/ko/cv_ko.pdf
 ```
+
+The current CV uses a two-page print layout. Markdown front matter
+`print_page_break_before` identifies the section that begins page two; the web
+version remains continuous. Research entries stay together across page breaks.
+
+The PDF builder can use an available Playwright module with
+`CV_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs`, and an installed
+Chrome with `CV_CHROME_CHANNEL=chrome`. When omitted, it uses the project's
+Playwright dependency and default Chromium. PDF rendering uses an isolated
+temporary browser profile and system fonts.
